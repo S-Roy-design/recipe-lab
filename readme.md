@@ -18,6 +18,7 @@ Table of contents:
 
 Content List
     Site specific:
+    
         [Top bar/header]
             Banner
             Navigation Menu
