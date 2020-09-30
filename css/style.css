@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Grandstander', sans-serif, cursive;
+    font-weight: 300;
+    background-color:white;
+
+}
+
+.banner-image{
+    width: auto;
+}
+
+.emphasis {
+    font-weight: 500;
+}
+
+.main-menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    background-color: peachpuff;
+}
+
+
+.highlight {
+    background-color: #D8E65E;
+}
+
+.save-button-styled {
+    display: block;
+    background-color: #EB8559;
+    border-radius: 0.5em;
+    text-align: center;
+    font-family: 'Grandstander', sans-serif, cursive;
+    font-weight: 400;
+}
+
+.recipe-container {
+    list-style-type: none;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "one   two"
+                         "three four";
+    width: auto;
+}
+
+.one {
+    font-size: small;
+    grid-area: one;
+}
+.two {
+    font-size: small;
+    grid-area: two;
+}
+.three {
+    font-size: small;
+    grid-area: three;
+}
+.four {
+    font-size: small;
+    grid-area: four;
+}
+
+.lower-bottom-margin {
+    margin-bottom: 0.5em;
+}
+
+.no-margin {
+    margin: 0;
+
+}
+.bottom-bar {
+    background-color:#E0BD8B;
+}
+/*  
+- Add media queries 
+- New Trick
+
+*/
+
+@media screen and (min-width: 600px) {
+    .recipe-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr auto auto;
+        grid-template-areas: "one   two  three"
+                             "four";
+        width: 60%;
+    }
+
+}
+
+
+@media screen and (min-width: 900px) {
+    .recipe-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "one   two  three four";
+        width: 60%;
+    }
+    .bottom-bar {
+        background-color:#E0BD8B;
+    }
+
+
+}
